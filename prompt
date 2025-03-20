@@ -1,0 +1,62 @@
+Implement an appointment scheduling application using strict Acceptance Test-Driven Development (ATDD) principles. 
+Your goal is to demonstrate pure ATDD methodology with clear, verifiable evidence of the process.
+
+1. Starting with this high-level scenario:
+   * Given I want to book an appointment
+   * When I select my preferred appointment date and time
+   * My appointment is stored for me to check later
+
+2. STRICTLY SEQUENTIAL process - this is NON-NEGOTIABLE:
+   * Write and commit ONLY ONE test scenario at a time
+   * Run the test and commit the EXACT failing test output
+   * Implement ONLY the minimal code needed to make THAT SPECIFIC test pass
+   * Git commit IMMEDIATELY after each step with descriptive messages
+   * Update development_log.md BEFORE moving to the next step
+   * ONLY THEN proceed to the next test scenario
+   * Document your reasoning for each implementation choice
+
+3. Technical requirements:
+   * Use this existing GitHub repository (the one containing this prompt)
+   * Choose your preferred programming language and framework
+   * Store appointments in memory (no database required yet)
+   * MUST include a user interface created using the SAME ATDD process
+
+4. Create a comprehensive development log:
+   * Maintain a detailed development_log.md with timestamps (YYYY-MM-DD HH:MM:SS)
+   * Include SHA hashes of each commit as you go
+   * For each test cycle, document IN DETAIL:
+     - The specific test scenario being addressed (one at a time)
+     - The exact test file name with specific line numbers modified
+     - The complete failing test output (copy-paste the entire output)
+     - The exact code files and line numbers modified to make the test pass
+     - The complete passing test output (copy-paste the entire output)
+     - Your reasoning for each implementation choice
+
+5. Follow this EXACT sequence for EACH feature:
+   * Commit A: Add ONE failing test (include complete test output)
+   * Commit B: Implement MINIMAL code to make the test pass (include complete test output)
+   * Commit C: Refactor if needed while keeping tests green (optional)
+   * Commit D: Update development_log.md with all details from steps A-C
+
+6. Avoid these anti-patterns that will compromise pure ATDD:
+   * NO implementation before a failing test exists
+   * NO implementing code beyond what is needed for the current test
+   * NO hardcoding values specifically to make tests pass
+   * NO writing multiple tests before implementing
+   * NO skipping the failing test stage
+   * NO retroactive documentation - log each step AS YOU GO
+
+7. UI Requirements:
+   * The UI MUST follow the same strict ATDD process as the backend
+   * Create specific UI tests BEFORE implementing any interface elements
+   * Document each UI test and implementation step in development_log.md
+   * The UI must satisfy the high-level ATDD scenario from part 1.
+
+8. Launch and verification:
+   * When all features are implemented and tests pass, launch the application
+   * Include clear instructions in development_log.md for running the application
+   * Ensure the application can be run with simple commands
+
+The development_log.md and commit history must provide complete, verifiable evidence that you followed pure ATDD methodology, allowing anyone to trace your exact development process, step by step, with no shortcuts.
+
+NOTE: Adhere to this process without exception. Each commit must happen as you do the work, not retroactively. Each step must be logged before moving to the next.
